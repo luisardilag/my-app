@@ -1,0 +1,18 @@
+<h4>{{description}}</h4>
+
+<div class="input-group">
+    <input type="text" 
+           class="form-control" 
+           [value]="description"
+           (input)="description = test.value"
+           #test>
+
+    <button class="btn btn-secondary" type="button" (click)="showGameList">Button</button>
+</div>
+
+
+<div class="py-3">
+    <h5>{{ gameList[0].name }}</h5>
+    <h5>{{ gameList[1].year }}</h5>
+</div>
+
